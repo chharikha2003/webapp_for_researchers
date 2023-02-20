@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgba(224, 234, 233);
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  top: 0;
+  left: 0;
+  height: 40px;
+  font-family: "Playfair Display", serif;
+}
+.logo {
+  width: 130px;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  list-style-type: none;
+  padding: 0 20px;
+  padding-top: 20px;
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:#0928af;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:'';
+    width:60%;
+    height:2px;
+    background:#0928af;
+    position:absolute;
+    bottom:-2px;
+    left:20px;
+}
+#head {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 150px;
+  height: 285px;
+}
+
+#head::before {
+  content: "";
+  background: url("bghead.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 350px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+#head .head1 {
+  padding: 80px;
+}
+#head h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+.h-primary {
+  font-size: 2.8rem;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#banner {
+  font-weight: bold;
+  text-align: -webkit-center;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+}
+
+#banner:hover {
+  transition: 2s;
+  transform: scale(1.5);
+}
+
+#mission h2,
+#vision h2 {
+  text-align: center;
+  margin-left: 24px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+#Mission,
+#Vision {
+  font-size: 1.4em;
+  font-family: "Dosis", sans-serif;
+}
+#mission {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0.5em;
+  margin-left: 12em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 1.5em;
+  box-shadow: 0 25px 30px rgb(0 0 0 / 55%);
+}
+
+#mission:hover,
+#vision:hover {
+  transform: scale(1.2);
+  border-radius: 3.5em;
+  background-color: rgb(62, 135, 188);
+  transition: 1.5s;
+  color: white;
+}
+
+#vision {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 1em;
+  padding: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 1.5em;
+  box-shadow: 0 25px 30px rgb(0 0 0 / 55%);
+}
+ul {
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  font-size: 1.25em;
+}
+#bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+#bottom ul li {
+  display: flex;
+  border: 0.2em solid black;
+  display: inline-flex;
+  padding: 1em;
+  justify-content: space-around;
+  margin: 2em 3em 2em 5em;
+  border-radius: 1em;
+  box-shadow: 0 30px 3-px rgb(0 0 0 / 55%);
+}
+
+#bottom ul li:hover {
+  border-radius: 3.5em;
+  transform: scale(1.2);
+  background-color: rgb(62, 135, 188);
+  transition: 1s;
+  color: whitesmoke;
+}
+
+.footer {
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
+  background-color: #d1e4f0;
+  width:100%;
+}
+
+.footer a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.footer a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.footer a.active {
+  background-color: #301934;
+  color: white;
+}
+.footer p {
+    text-align: center;
+    padding:15px;
+}
+#points {
+  display: flex;
+  flex-direction: column;
+}
+
+#name {
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+}
+
+#points ul li {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5em 0 0.5em 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  list-style-type: circle;
+  font-size: 1.25em;
+  font-family: "Dosis", sans-serif;
+}
+
+#pic1 {
+  height: 2em;
+  padding-right: 0.5em;
+}
+
+#pic2 {
+  height: 1em;
+  padding-right: 0.5em;
+}
+
+#pic3 {
+  height: 1.5em;
+  padding-right: 0.5em;
+}
+
+#pic1:hover {
+  height: 3em;
+}
+
+#pic2:hover {
+  height: 2em;
+}
+
+#pic3:hover {
+  height: 3em;
+}
